@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const SongDetails = () => {
+const SongDetails = ({details}) => {
     return (
-        <p>I am a SongDetails</p>
+        <Fragment>
+            <h2>{details.title.label}</h2>
+            <img src={details["im:image"][2].label}></img>
+        </Fragment>
     )
 }
 
