@@ -2,7 +2,7 @@
 #chart-box-container {
   background-color: #9DD9D2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 h1 {
