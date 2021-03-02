@@ -1,6 +1,13 @@
 
 #chart-box-container {
-  background-color: azure;
+  background-color: #9DD9D2;
   display: flex;
   justify-content: space-between;
+}
+
+h1 {
+  background-color: #392F5A;
+  color: #FFF8F0;
+  padding: 2vh;
+  margin: 0;
 }
