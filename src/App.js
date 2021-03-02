@@ -6,7 +6,9 @@ function App() {
   return (
     <Fragment>
       <h1>UK Top 20</h1>
-      <ChartBox/>
+      <div id="chart-box-container">
+        <ChartBox/>
+      </div>
     </Fragment>
   );
 }

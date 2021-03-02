@@ -27,9 +27,12 @@ const ChartBox = () => {
 
     return (
         <Fragment>
-            <p>I am a ChartBox</p>
-            <SongList charts={charts} loaded={loaded} selectedSong={changeSelectedSongIndex}/>
-            <SongDetails details={charts[selectedSongIndex]}/>
+            <div id="song-list-container">
+                <SongList charts={charts} loaded={loaded} selectedSong={changeSelectedSongIndex}/>
+            </div>
+            <div id="song-detail-container">
+                <SongDetails details={charts[selectedSongIndex]} loaded={loaded}/>
+            </div>
         </Fragment>
     )
 }
