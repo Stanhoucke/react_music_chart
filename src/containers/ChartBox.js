@@ -6,10 +6,15 @@ const ChartBox = () => {
 
     const [charts, setCharts] = useState({});
     const [loaded, setLoaded] = useState(false);
+    const [selectedSongIndex, setSelectedSongIndex] = useState(0);
 
     useEffect(() => {
         getCharts();
     },[])
+
+    const changeSelectedSongIndex = (newSongIndex) => {
+        setSelectedSongIndex(newSongIndex);
+    }
 
     const getCharts = () => {
         const url = "https://itunes.apple.com/gb/rss/topsongs/limit=20/json";
@@ -23,7 +28,7 @@ const ChartBox = () => {
     return (
         <Fragment>
             <p>I am a ChartBox</p>
-            <SongList charts={charts} loaded={loaded}/>
+            <SongList charts={charts} loaded={loaded} selectedSong={changeSelectedSongIndex}/>
             <SongDetails/>
         </Fragment>
     )
