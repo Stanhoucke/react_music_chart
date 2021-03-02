@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Song = () => {
+const Song = ({children}) => {
     return (
-        <p>I am a song</p>
+        <li>{children}</li>
     )
 }
 
