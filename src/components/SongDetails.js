@@ -24,7 +24,8 @@ const SongDetails = ({details, loaded}) => {
     }
     return (
         <Fragment>
-            <h2>{details.title.label}</h2>
+            <h2>{details["im:name"].label}</h2>
+            <h3>Artist: {details["im:artist"].label}</h3>
             <img src={details["im:image"][2].label}></img>
             <audio controls ref={audioRef}>
                 <source src={details.link[1].attributes.href} type={details.link[1].attributes.type}></source>

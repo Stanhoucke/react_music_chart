@@ -8,10 +8,7 @@ const Song = ({children, index, selectedSong}) => {
 
     return (
         <li>
-            <h3>
-                {children}
-            </h3>
-            <p>My index is: {index}</p>
+            <h3>{children}</h3>
             <button onClick={selectSong}>More Details</button>
         </li>
     )
